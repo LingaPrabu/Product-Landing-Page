@@ -1,0 +1,141 @@
+<style>
+    * {
+        margin:0;
+        padding: 0;
+    }
+    body{
+        background: linear-gradient(316deg, #ff0000 0%, #000 56%, #6b08e0 100%);
+    }
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        background-color: #fffd00;
+        border-radius: 10px;
+    }
+    footer{
+        width: 100%;
+        background-color: #fffd00;
+    }
+    #nav-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+    }
+    .nav-link{
+        margin: 0 1vw 0 1vw;
+        padding: 0.8vw;
+        text-align: center;
+        background: linear-gradient(137deg, #b5f404 0%, #37b42f 100%);
+        border-radius: 30px;
+        text-decoration: none;
+        color: #000;
+        font-family: 'Work Sans', sans-serif;
+    }
+    #Title,h2{
+        color: #fff;
+        text-align: center;
+        margin-top: 5vh;
+    }
+
+    p{
+        text-align: center;
+        margin-top: 5vh;
+        padding: 10px;
+        font-family: 'Pattaya', sans-serif;
+    }
+    #video{
+        display: block;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        border-radius: 40px; 
+        padding-bottom: 10px;
+        
+    }
+    input[type=submit] {
+            display: block;
+            background-color: #000000;
+            margin:10px auto;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            
+        }
+    .large{
+        display: block;
+        margin: auto;
+        width: 30%;
+        border-radius: 40px; 
+        text-align: center;
+        padding: 10px;
+        font-weight: 900;
+
+    }
+    #Work{
+        padding-top: 80px;
+
+    }
+    section,#Download{
+        background-color: #fff;
+        border-radius: 40px;
+        margin: 5vw;
+    }
+    #footer_img{
+        display: block;
+        margin:0 auto 0 auto;
+    }
+    @media (max-width: 600px) {
+        .large{
+            width: 100%;
+        }
+
+}
+</style>
+<html>
+    <head>
+        <title>Product</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div id="Home">
+            <header id="header">
+                <img id="header-img" width="200px" height="80px" src="https://play-lh.googleusercontent.com/V1N_Y-L6Fz5IjZT5q6vDcoub3b55qeQrJ8tVTpaQmNBWwlyb3Hl3GoIHaKbmTtBzSwY=s180-rw" alt="Logo">
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#Home">Home</a>
+                    <a class="nav-link" href="#Work">How It Works</a>
+                    <a class="nav-link" href="#Download">Download</a>
+                </nav>
+            </header>
+        </div>
+        <div id="Work">
+            <h1 id="Title">How Our App Works</h1>
+            <section>
+                <p>We Collect Our College Time Table And Update in Our 
+                    Database, Whenever The User Open The App, Our App Check The Time And Select Period Based On The User
+                    Class Time Table.. 
+                </p>
+                <iframe id="video" src="https://www.youtube.com/embed/seVeKVl2qx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+            </section>
+        </div>
+        <h2>Why Waiting? Take Action Now</h2>
+        <div id="Download">
+            <form id="form" action="#">
+                <p>Make Decision Faster And Get Started.</p>
+                <input name="email" class="large" id="email" type="email" placeholder="Example@gmail.com" required>
+                <input id="submit" value="Download" type="submit">
+            </form>
+        </div>
+        <footer>
+               <a href="https://play.google.com/store/apps/details?id=com.cse.onlineclass"> <img width="250px" id="footer_img" height="100px" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Download_Link"></a>
+                
+            </footer>
+    </body>
+</html>
